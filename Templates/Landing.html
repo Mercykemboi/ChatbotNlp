@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+        <script src="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+   
+        <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Mental health project</title>
+    </head>
+<body>
+<div class="wrapper">
+    <div class="nav">
+        <div class="logo">
+            <img src="{{url_for('static', filename='/images/mental-health.png')}}" style="height: 80px; color: black;" />
+        </div>
+        <div class="links">
+            <a href="#" class="mainlink">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          
+        </div>
+    </div>
+    <!-- Landing -->
+    <div class="landing">
+        <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Self Care is Self love , take care of your health<span style="color: blue; font-size: 40px">Mental Health</span></h1>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa neque obcaecati,  
+    Praesentium, qui vitae totam earum dolore quis ab dolorem nisi, aliquam illo accus</h3> 
+<div class="btn">
+<a href="#">Chat with us</a>
+    </div>
+
+        </div>
+        <div class="landingImage" data-aos="fade-down" data-aos-duration="1000">
+            <img src="{{url_for('static', filename='/images/health2.jpg')}}" />
+        </div>
+    </div>
+    <!-- service -->
+    <!-- <div class="about">
+        <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
+           <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.   
+            Praesentium, qui vitae totam earum dolore quis ab dolorem</h1> 
+            <img src="{{url_for('static', filename='/images/Awareness.jpg')}}" width="650" height="200" />  
+        </div>
+       <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <ol>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+            </ol>
+        </div>
+    </div> -->
+    <!-- info -->
+    <div class="infoSection">
+        <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Heath Matters</h1>
+
+        </div>
+        <div class="infoCards">
+            <div class="card one" data-aos="fade-up" data-aos-duration="1000">
+                <img src="{{url_for('static', filename='/images/Smile.jpg')}}" class="cardOneImg"   data-aos="fade-up" data-aos-duration="1100"/> 
+<div class="cardbgone">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" width="100px" />
+    </div></a>
+</div>
+            </div>
+            <div class="card two" data-aos="fade-up" data-aos-duration="1300">
+                <img src="{{url_for('static', filename='/images/Mental.jpg')}}" class="cardTwoImg" data-aos="fade-up" data-aos-duration="1200"/>
+              
+<div class="cardbgtwo">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" />
+    </div></a>
+</div>
+            </div>
+            <div class="card Three" data-aos="fade-up" data-aos-duration="1600">
+                <img src="{{url_for('static', filename='/images/Matters.jpg ')}}" class="cardThreeImg" data-aos="fade-up" data-aos-duration="1300"/>
+              
+              
+<div class="cardbgthree">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" />
+        
+    </div></a>
+</div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="banner">
+        <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Downnload our app
+            Get updated each day </h1>
+            <a href=""><img></a>
+            <a href=""><img></a>
+
+        </div>
+        <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+            <img src="{{url_for('static', filename='/images/Smile.jpg')}}" class="bannerImg" data-aos="fade-up" data-aos-duration="1000"/>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <h1>Mental</h1>
+        <div class="footerLinks">
+            <a href="#" class="mainLink">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div> -->
+</div>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
