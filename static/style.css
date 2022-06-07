@@ -79,7 +79,7 @@ body,html{
 .landingText .btn{
     width: 120px;
     margin-top: 30px;
-    padding: 14px 20px 12px 20px;
+    padding: 14px 10px 12px 20px;
     background-color: green;
     border-radius: 20px;
     text-align: center;
@@ -96,7 +96,7 @@ body,html{
 /* services */
 .about{
     height: 600px;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
