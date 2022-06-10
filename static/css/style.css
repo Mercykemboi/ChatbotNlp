@@ -1,17 +1,20 @@
+
 body,html{
+
     background-color:white;
-    /* font-family: "Playfair Display", serif; */
-    overflow-x: hidden !important;
-    margin: 0px !important;
-    padding: 0px !important;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden ;
+    margin: 0px ;
+    padding: 0px ;
 
 }
 *{
     text-decoration: none !important;
+   
 }
 .nav{
-    position: fixed;
-    z-index: 1000;
+    /* position: fixed; */
+    z-index: 800;
     top: 0;
     right: 0;
     left: 0;
@@ -61,17 +64,24 @@ body,html{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items:  center;
     padding: 0 10vw 0 10vw;
-    height: 100vh;
+    height: max-content;
+    margin-top: 2rem;
+    /* flex-wrap: wrap-reverse; */
+}
+.animate{
+    height: 650px;
+    width: 650px;
+    align-items: baseline;
 }
 .landingText h1{
-    font-size: 6vw;
+    font-size: 4vw;
     margin: 0 !important;
 }
 .landingText h3{
     margin: 6px !important;
-    font-size: 15px;
+    font-size: 10px;
     line-height: 1.8;
     color: grey;
     padding-right: 20px;
@@ -80,7 +90,7 @@ body,html{
     width: 120px;
     margin-top: 30px;
     padding: 14px 10px 12px 20px;
-    background-color: green;
+    background-color: #050257;
     border-radius: 20px;
     text-align: center;
 
@@ -89,12 +99,12 @@ body,html{
     font-size: 1.2vw;
     color: white;
 }
-.landingImage img{
+/* .landingImage img{
     width: 28vw;
-}
+} */
 
 /* services */
-.about{
+/* .about{
     height: 600px;
     padding: 20px;
     display: flex;
@@ -140,7 +150,7 @@ li span{
     position: absolute;
     line-height: 25px;
     font-weight: 600;
-}
+} */
 .infoSection{
     height: 600px;
 }
@@ -198,16 +208,16 @@ li span{
 }
 .cardbgone{
     height: 150px;
-    background-color: white;
+    /* background-color: black; */
 
 }
 .cardbgtwo{
    height: 150px;
-   background-color: white;
+   /* background-color: black; */
 }
 .cardbgthree{
     height: 150px;
-    background-color: white;
+    /* background-color: black; */
  }
  .cardContent{
      padding: 0 20px;
@@ -220,7 +230,7 @@ li span{
      position: absolute;
      right: 20px;
     padding: 10px;
-    background-color: white;
+    /* background-color: black; */
     width: 25px;
     height: 20px;
     border-radius: 6px;
@@ -238,34 +248,15 @@ li span{
      left: 0px;
      width: 16px;
  }
- .banner{
-     height:200px;
-     background-color:black;
-     display: flex;
-     flex-direction: row;
-     padding: 50px;
-     justify-content: space-evenly;
-     align-items: center;
- }
- .bannerText h1{
-     font-size: 3vw;
-     color: white;
-     font-weight: 600;
- }
-.bannerText img{
-    width: 10vw;
-    margin-right:20px ;
-}
-.bannerImg img{
-    width: 20vw;
-}
 /* footer */
 .footer{
-    height: 100px;
-    display: flex;
+    height: 168px;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    min-height: 100px;
+    margin-top: 20px;
 }
 .footerLinks a{
     margin: 20px;
@@ -275,11 +266,64 @@ li span{
 }
 .footerLinks .mainlink{
     color: coral;
+} */
+
+.footer{
+    background-color:black;
+    padding: 70px 0;
+    color: white;
+    /* min-height: 100px; */
+    margin-top: 20px;
+    width: 50%;
+    
+}
+.container-footer{
+    max-width: 100%;
+    background-color:black;
+    margin: auto;
+    /* height: 170px; */
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    color: white;
+}
+.footer-col h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    
 }
 
+.footer-col ul li{
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li:hover{
+color: orchid;
+padding: 10px;
+}
+.footer-col .socials{
+    display: inline-block;
+    height: 40px;
+}
+.bar{
+    display: none;}
 /* responsive */
 
-@media only screen and(max-width:600px) {
+/* @media only screen and(max-width:600px) {
   .nav{
       flex-direction: column;
       justify-content: space-around;
@@ -297,7 +341,7 @@ li span{
       font-size: 12px;
       font-weight: 600;
 
-  }/* landing css */
+  }
       .landing{
 flex-direction: column-reverse;
 height: 750px;
@@ -320,7 +364,7 @@ text-align: center;
     width: 52vw;
     margin-bottom: 20px;
 }
-/* service */
+
 .about{
     height: auto;
     padding: 0px;
@@ -369,21 +413,5 @@ li p{
 .infoCards .card{
     margin-bottom: 60px;
 }
-.banner{
-    height: auto;
-    flex-direction: column-reverse;
-    padding:50px;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-.banner h1{
-    font-size: 6vw;
-}
-.bannerInnerText {
-    font-size: 3vw !important;
-}
-.bannerImg img{
-    width: 26vw;
-}
-  }
+
+  } */

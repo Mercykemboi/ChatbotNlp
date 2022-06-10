@@ -1,39 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Chatbot</title>
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+        <script src="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+        <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>Mental health project</title>
+    </head>
 <body>
-<div class="container">
-    <div class="chatbox">
-        <div class="chatbox__support">
-            <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
-                </div>
-                <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
-                </div>
-            </div>
-            <div class="chatbox__messages">
-                <div></div>
-            </div>
-            <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
-            </div>
+<div class="wrapper">
+    <div class="nav">
+        <div class="logo">
+            <img src="{{url_for('static', filename='/images/mental-health.png')}}" style="height: 80px; color: black;" />
         </div>
-        <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        <div class="links">
+            <a href="#" class="mainlink">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          
         </div>
     </div>
-</div>
+    <!-- Landing -->
+    <div class="landing">
+        <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Self Care is Self love take care of your <span style="color: #050257;">Mental Health</span></h1>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa neque obcaecati,  
+    Praesentium, qui vitae totam earum dolore quis ab dolorem nisi, aliquam illo accus</h3> 
+<div class="btn">
+<a href="{{ url_for('static', filename='chat.html')}}">Lets chat    <img src="{{url_for('static', filename='/images/chat.png')}}"  style="height: 25px;"/> </a>
+    </div>
 
-   
+        </div>
+        <div class="landingImage" data-aos="fade-down" data-aos-duration="1000">
+            <!-- <img src="{{url_for('static', filename='/images/health2.jpg')}}" /> -->
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_of3skn6w.json" class="animate" background="transparent"  speed="0.6"     autoplay></lottie-player>
+
+        </div>
+    </div>
+    <!-- service -->
+    <!-- <div class="about">
+        <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
+           <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.   
+            Praesentium, qui vitae totam earum dolore quis ab dolorem</h1> 
+            <img src="{{url_for('static', filename='/images/Awareness.jpg')}}" width="650" height="200" />  
+        </div>
+       <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <ol>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+                <li>
+                    <span>01</span>
+                    <p>Mental health matters</p>
+                </li>
+            </ol>
+        </div>
+    </div> -->
+    <!-- info -->
+    <div class="infoSection">
+        <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Heath Matters</h1>
+
+        </div>
+        <div class="infoCards">
+            <div class="card one" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
+                <img src="{{url_for('static', filename='/images/Smile.jpg')}}" class="cardOneImg"   data-aos="fade-up" data-aos-duration="1100"/> 
+<div class="cardbgone">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" width="100px" />
+    </div></a>
+</div>
+            </div>
+            <div class="card two" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+                <img src="{{url_for('static', filename='/images/Mental.jpg')}}" class="cardTwoImg" data-aos="fade-up" data-aos-duration="1200"/>
+              
+<div class="cardbgtwo">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" />
+    </div></a>
+</div>
+            </div>
+            <div class="card Three" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
+                <img src="{{url_for('static', filename='/images/Matters.jpg ')}}" class="cardThreeImg" data-aos="fade-up" data-aos-duration="1300"/>
+              
+              
+<div class="cardbgthree">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" />
+        
+    </div></a>
+</div>
+            </div>
+
+            <div class="card Three" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1500">
+                <img src="{{url_for('static', filename='/images/Awareness.jpg ')}}" class="cardThreeImg" data-aos="fade-up" data-aos-duration="1300"/>
+              
+              
+<div class="cardbgthree">
+
+</div>
+<div class="cardContent">
+    <h2>Heath matters</h2>
+    <p>All matters </p>
+    <a href="#"><div class="cardbtn">
+        <img src="{{url_for('static', filename='/images/front.png')}}" class="cardIcon" />
+        
+    </div></a>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" >
+        <div class="container-footer">
+           <div class="row">
+    <div class="footer-col" >
+    <h2><u>Website</u></h2>
+    <ul>
+        <li>About Us</li>
+        <li>Our Services</li>
+        <li>Privacy Policy</li>
+    </ul>
+    </div>
+    
+    <div class="footer-col" >
+        <h2><u>Get help</u></h2>
+        <ul>
+            <li>Depression</li>
+            <li>Anxiety</li>
+            <li>Insomnia</li>
+            <li>Fatigue</li>
+        </ul>
+        </div>
+    <div class="footer-col" >
+        <h2><u>Follow us</u></h2>
+        <div class="socials"> 
+        <ul >
+            <li ><img src= "{{url_for('static', filename='/images/icons8-facebook.svg')}}" alt="facebook" width="20px"> Facebook</li>
+            <li><img src="{{url_for('static', filename='/images/instagram-brands (1).svg')}}" alt="instagram" width="15px"> Instagram</li>
+            <li><img src= "{{url_for('static', filename='/images/twitter-brands.svg')}}"  alt="twitter" width="15px"> Twitter</li>
+            <li><img src="{{url_for('static', filename='/images/linkedin-in-brands.svg')}}"  alt="linkedin-in-brands" width="15px"> Linked in</li>
+             
+        </ul>
+    </div>
+        </div>
+           </div>  
+        </div>
+    </footer>
+    
+</div>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
+
 </html>
