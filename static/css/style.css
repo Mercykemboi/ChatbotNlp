@@ -24,7 +24,7 @@ body,html{
     justify-content: space-between;
     align-items: center;
     padding: 0 25px 0 25px;
-    background-color: rgb(221, 233, 226);
+    background-color: skyblue;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -152,7 +152,13 @@ li span{
     font-weight: 600;
 } */
 .infoSection{
-    height: 600px;
+    height: 746px;
+    background-color: rgb(33, 101, 122);
+    color: white;
+    /* background-image: ");  */
+       /* background-size: cover; background-repeat: no-repeat; */
+     
+        
 }
 .infoHeader{
     text-align: center;
@@ -164,13 +170,16 @@ li span{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
+    font-weight: 400;
+    font-size: 16.5px;
+    color: white;
 }
 .infoCards .card{
     position: relative;
-    height: 360px;
+    height: 450px;
     width:360px;
-    background: white;
+ color: white;
     box-shadow: 0 10px 22px black;
 }
 .infoCards .cardone{
@@ -178,6 +187,7 @@ li span{
     position: absolute;
     top: -50px;
     right: -50px;
+    text-decoration: underline;
 }
 .infoCards .cardone{
     width: 150px;
@@ -292,8 +302,9 @@ ul{
 }
 .footer-col{
     width: 25%;
-    padding: 0 15px;
+    padding: 0 ;
     color: white;
+    height: 200px;
 }
 .footer-col h2{
     font-size: 20px;
